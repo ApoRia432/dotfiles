@@ -8,18 +8,19 @@ font-size = 13
 font-feature = -dlig
 
 # theme
-#theme = rose-pine-moon
+# theme = rose-pine-moon
 theme = catppuccin-mocha
-#theme = tokyonight_night
-#theme = Dracula
-#theme = Kanagawa Wave
-#theme = Kanagawa Dragon
+# theme = tokyonight_night
+# theme = Dracula
+# theme = Kanagawa Wave
+# theme = Kanagawa Dragon
+# theme = nordfox
 
 # background
 # background = 000000
-background-opacity = 0.95
-background-blur = true
-background-blur-radius = 20
+# background-opacity = 0.95
+# background-blur = true
+# background-blur-radius = 40
 
 # window
 window-theme = ghostty
