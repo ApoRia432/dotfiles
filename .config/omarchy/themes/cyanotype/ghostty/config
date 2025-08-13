@@ -1,0 +1,6 @@
+theme = catppuccin-mocha
+
+background = 111111
+
+window-theme = ghostty
+gtk-titlebar = true

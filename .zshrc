@@ -14,6 +14,8 @@ export QT_IM_MODULE=fcitx5
 export XMODIFIERS=@im=fcitx5
 export DOCKER_BUILDKIT=1
 
+export EDITOR=vim
+
 alias vi=vim
 
 ZSH_THEME="robbyrussell"
