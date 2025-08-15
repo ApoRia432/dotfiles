@@ -19,7 +19,7 @@ theme = rose-pine-moon
 # theme = nordfox
 
 # background
-background = 000000
+# background = 000000
 # background-opacity = 0.95
 # background-blur = true
 # background-blur-radius = 40
