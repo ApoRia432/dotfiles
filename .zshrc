@@ -6,17 +6,20 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/path/to/zig
 # config home
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_BIN_DIR="$HOME/.local/bin"
 # .local/bin
 export PATH="$PATH:$HOME/.local/bin"
 # input method
 export GTK_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS=@im=fcitx5
+export SDL_IM_MODULE=fcitx5
 export DOCKER_BUILDKIT=1
 
 export EDITOR=vim
 
 alias vi=vim
+alias nv=nvim
 
 ZSH_THEME="robbyrussell"
 
@@ -35,3 +38,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$HOME/.cargo/bin:$PATH
 
 source ~/.env
+
+# opencode
+export PATH=/home/hysilens/.opencode/bin:$PATH
