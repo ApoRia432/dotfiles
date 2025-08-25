@@ -48,3 +48,4 @@ keybind = ctrl+shift+p=previous_tab
 keybind = ctrl+shift+s=toggle_tab_overview
 
 config-file = ?~/.config/omarchy/current/theme/ghostty/config
+config-file = ?~/.config/omarchy/current/theme/ghostty.conf
