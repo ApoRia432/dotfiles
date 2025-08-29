@@ -1,9 +1,4 @@
 # font
-# font-family = "FiraCode Nerd Font Mono"
-# font-family = "JetBrainsMono Nerd Font Mono"
-# font-family = "UbuntuMono Nerd Font"
-# font-family = "HackNerdFontMono"
-# font-family = "CaskaydiaMono Nerd Font Mono"
 font-family = "Iosevka Nerd Font"
 font-size = 13
 font-feature = -dlig
@@ -14,9 +9,6 @@ font-feature = -dlig
 # theme = catppuccin-macchiato
 # theme = catppuccin-frappe
 theme = tokyonight_night
-# theme = Dracula
-# theme = Kanagawa Wave
-# theme = Kanagawa Dragon
 # theme = nordfox
 
 # background
@@ -33,8 +25,6 @@ window-padding-y = 6
 window-theme = ghostty
 gtk-titlebar = true
 confirm-close-surface = false
-#macos-non-native-fullscreen = true
-macos-titlebar-style = hidden
 
 #cursor
 cursor-style = block
@@ -46,6 +36,3 @@ keybind = ctrl+shift+t=new_tab
 keybind = ctrl+shift+n=next_tab
 keybind = ctrl+shift+p=previous_tab
 keybind = ctrl+shift+s=toggle_tab_overview
-
-config-file = ?~/.config/omarchy/current/theme/ghostty/config
-config-file = ?~/.config/omarchy/current/theme/ghostty.conf
