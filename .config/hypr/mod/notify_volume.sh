@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# current_volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2}') 
-# percentage=$((current_volume * 100))
-$percentage="?"
+current_volume=$(echo "$(wpctl get-volume @DEFAULT_AUDIO_SINK@) 100" | awk '{print $2 * $3}') 
 
-notify-send -h string:x-canonical-private-synchronous:brightness_notification \
-            -h int:value:"$percentage" "Volume set to ${percentage}%"
+notify-send -h string:x-canonical-private-synchronous:volume_notification \
+            -h int:value:"$current_volume" "Volume set to ${current_volume}%"
