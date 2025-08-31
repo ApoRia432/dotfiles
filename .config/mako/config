@@ -8,5 +8,5 @@ border-size=2
 font=Iosevka Nerd Font
 anchor=top-right
 outer-margin=20
-default-timeout=5000
+default-timeout=3000
 max-icon-size=32
