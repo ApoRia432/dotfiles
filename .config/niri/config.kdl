@@ -7,9 +7,9 @@ output "eDP-1" {
 window-rule {
     open-maximized true
 
-    geometry-corner-radius 8
-    clip-to-geometry true
-    tiled-state true
+    // geometry-corner-radius 8
+    // clip-to-geometry true
+    // tiled-state true
 }
 
 overview {
@@ -104,6 +104,7 @@ hotkey-overlay {
 
 environment {
     QT_QPA_PLATFORM "wayland"
+    MOZ_ENABLE_WAYLAND "1"
 }
 
 animations {
@@ -112,8 +113,7 @@ animations {
     // slowdown 3.0
 }
 
-// Example: block out two password managers from screen capture.
-/-window-rule {
+window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
 
@@ -344,8 +344,8 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
+    Mod+Print { screenshot; }
+    Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
