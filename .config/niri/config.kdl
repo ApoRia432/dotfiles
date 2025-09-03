@@ -70,6 +70,12 @@ cursor {
     hide-when-typing
 }
 
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 input {
     touchpad {
         tap
