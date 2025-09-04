@@ -7,13 +7,10 @@ output "eDP-1" {
 window-rule {
     open-maximized true
 
-    // geometry-corner-radius 8
-    // clip-to-geometry true
-    // tiled-state true
-}
+    geometry-corner-radius 0
+    clip-to-geometry false
 
-overview {
-    zoom 0.4
+    draw-border-with-background false
 }
 
 layout {
@@ -30,40 +27,20 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
-        //off
-        width 2
-        active-color "#7fc8ff"
-        inactive-color "#505050"
-        //active-gradient from="#33ccffee" to="#00ff99ee" angle=180
-        //active-gradient from="#ffbb66" to="#ffffff" angle=180 // relative-to="workspace-view"
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+        off
     }
 
-    // You can also add a border. It's similar to the focus ring, but always visible.
     border {
-        off
+        // off
         width 2
-        // active-color "#ffc87f"
         inactive-color "#505050"
         urgent-color "#9b0000"
-        active-gradient from="#ffbb66" to="#ffffff" angle=180 // relative-to="workspace-view"
-        // active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+        active-gradient from="#33ccffee" to="#00ff99ee" angle=180
     }
+}
 
-    shadow {
-        // on
-        // draw-behind-window true
-
-        // Softness controls the shadow blur radius.
-        softness 30
-        // Spread expands the shadow.
-        spread 5
-        // Offset moves the shadow relative to the window.
-        offset x=0 y=5
-        // You can also change the shadow color and opacity.
-        color "#0007"
-    }
+overview {
+    zoom 0.4
 }
 
 cursor {
@@ -85,13 +62,10 @@ input {
     }
 }
 
-spawn-at-startup "swaybg" "-i" "/home/iuno/Pictures/wallpaper/yonagi.jpg"
-spawn-at-startup "pipewire"
-spawn-at-startup "fcitx5"
-spawn-at-startup "waybar"
-spawn-at-startup "mako"
-
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+window-rule {
+    match app-id="ghostty"
+    opacity 0.97
+}
 
 window-rule {
     match title="TUI.float"
@@ -102,25 +76,25 @@ hotkey-overlay {
     skip-at-startup
 }
 
+spawn-at-startup "pipewire"
+spawn-at-startup "fcitx5"
+spawn-at-startup "waybar"
+spawn-at-startup "mako"
+spawn-sh-at-startup "swaybg -i ~/Pictures/wallpaper/yonagi.jpg"
+spawn-at-startup "xwayland-satellite"
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
 environment {
+    DISPLAY ":0"
+    //DISPLAY null
     QT_QPA_PLATFORM "wayland"
     MOZ_ENABLE_WAYLAND "1"
+    SCREENSHOT_PATH "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 }
 
 animations {
-    //off
-
-    // slowdown 3.0
-}
-
-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
+    // off
 }
 
 binds {
@@ -128,15 +102,17 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+B hotkey-overlay-title="Open a Browser: Chromium" { spawn "chromium"; }
-    Mod+D hotkey-overlay-title="Open a WebApp: Discord" { spawn "chromium" "--new-window" "--app=https://discord.com/channels/@me"; }
+    Mod+D hotkey-overlay-title="Open a WebApp: Discord" { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
     Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" allow-inhibiting=false { spawn "hyprlock"; }
     
-    Mod+A hotkey-overlay-title="Open a TUI: wiremix" { spawn "ghostty" "--title='TUI.float'" "--command='wiremix'"; }
-    Mod+C hotkey-overlay-title="Open a TUI: bluetui" { spawn "ghostty" "--title='TUI.float'" "--command='bluetui'"; }
+    Mod+A hotkey-overlay-title="Open a TUI: wiremix" { spawn-sh "ghostty --title='TUI.float' --command='wiremix'"; }
+    Mod+C hotkey-overlay-title="Open a TUI: bluetui" { spawn-sh "ghostty --title='TUI.float' --command='bluetui'"; }
+    Mod+P hotkey-overlay-title="Open a TUI: btop" { spawn-sh "ghostty --title='TUI.float' --command='btop'"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "sh" "-c" "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && ~/.config/hypr/mod/notify_volume.sh"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "sh" "-c" "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && ~/.config/hypr/mod/notify_volume.sh"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && ~/.config/hypr/mod/notify_volume.sh"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && ~/.config/hypr/mod/notify_volume.sh"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
@@ -344,9 +320,10 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Mod+Print { screenshot; }
-    Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Mod+Print { spawn-sh "niri msg action screenshot && notify-send 'Screenshot saved'"; }
+    Print { spawn-sh "niri msg action screenshot-screen && notify-send 'Screenshot saved'"; }
+    Alt+Print { spawn-sh " niri msg action screenshot-window && notify-send 'Screenshot saved'"; }
+    Ctrl+Print { spawn "~/.config/niri/screen-record.sh";}
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
@@ -359,7 +336,7 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
-    Mod+Shift+E { quit; }
+    Mod+Shift+E { quit skip-confirmation=true; }
     Ctrl+Alt+Delete { quit; }
 
     // Powers off the monitors. To turn them back on, do any input like
