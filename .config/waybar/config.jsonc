@@ -107,7 +107,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": ""
+    "on-click": "ghostty --title=TUI.float2 --command=impala"
   },
   "battery": {
     "format": "{capacity}% {icon}",
