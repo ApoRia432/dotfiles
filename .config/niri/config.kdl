@@ -93,7 +93,6 @@ environment {
     QT_QPA_PLATFORM "wayland"
     MOZ_ENABLE_WAYLAND "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
-    SCREENSHOT_PATH "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 }
 
 animations {
@@ -106,21 +105,26 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+B hotkey-overlay-title="Open a Browser: Chromium" { spawn "chromium"; }
     Mod+D hotkey-overlay-title="Open a WebApp: Discord" { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
+
+    Mod+G hotkey-overlay-title="Open a WebApp: Grok" { spawn-sh "chromium --new-window --app='https://grok.com'"; }
+    Mod+Shift+G hotkey-overlay-title="Open a WebApp: Gemini" { spawn-sh "chromium --new-window --app='https://gemini.google.com/app'"; }
+    Mod+Shift+A hotkey-overlay-title="Open a WebApp: Gemini" { spawn-sh "chromium --new-window --app='https://chatgpt.com'"; }
+
     Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
-    // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" allow-inhibiting=false { spawn "hyprlock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" allow-inhibiting=false { spawn "hyprlock"; }
     
     Mod+A hotkey-overlay-title="Open a TUI: wiremix" { spawn-sh "ghostty --title='TUI.float' --command='wiremix'"; }
     Mod+C hotkey-overlay-title="Open a TUI: bluetui" { spawn-sh "ghostty --title='TUI.float' --command='bluetui'"; }
     Mod+P hotkey-overlay-title="Open a TUI: btop" { spawn-sh "ghostty --title='TUI.float' --command='btop'"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && ~/.config/hypr/mod/notify_volume.sh"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && ~/.config/hypr/mod/notify_volume.sh"; }
-    XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && ~/.config/niri/notify_volume.sh"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && ~/.config/niri/notify_volume.sh"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
-    XF86MonBrightnessUp   allow-when-locked=true { spawn "~/.config/hypr/mod/notify_brightness.sh"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "~/.config/hypr/mod/notify_brightness.sh"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "~/.config/niri/notify_brightness.sh"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "~/.config/niri/notify_brightness.sh"; }
 
     Mod+O repeat=false { toggle-overview; }
 
