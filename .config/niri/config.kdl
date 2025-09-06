@@ -40,7 +40,7 @@ layout {
 }
 
 overview {
-    zoom 0.4
+    zoom 0.67
 }
 
 cursor {
@@ -64,7 +64,7 @@ input {
 
 window-rule {
     match app-id="ghostty"
-    opacity 0.97
+    opacity 0.99
 }
 
 window-rule {
@@ -80,7 +80,9 @@ spawn-at-startup "pipewire"
 spawn-at-startup "fcitx5"
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
-spawn-sh-at-startup "swaybg -i ~/Pictures/wallpaper/yonagi.jpg"
+// spawn-sh-at-startup "swaybg -m center -i ~/Pictures/wallpaper/galbrena.png"
+// spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/wallpaper/yonagi.jpg"
+spawn-at-startup "~/.config/niri/swaybg.sh"
 spawn-at-startup "xwayland-satellite"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
@@ -90,6 +92,7 @@ environment {
     //DISPLAY null
     QT_QPA_PLATFORM "wayland"
     MOZ_ENABLE_WAYLAND "1"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
     SCREENSHOT_PATH "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 }
 
@@ -105,7 +108,7 @@ binds {
     Mod+D hotkey-overlay-title="Open a WebApp: Discord" { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
     Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" allow-inhibiting=false { spawn "hyprlock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" allow-inhibiting=false { spawn "hyprlock"; }
     
     Mod+A hotkey-overlay-title="Open a TUI: wiremix" { spawn-sh "ghostty --title='TUI.float' --command='wiremix'"; }
     Mod+C hotkey-overlay-title="Open a TUI: bluetui" { spawn-sh "ghostty --title='TUI.float' --command='bluetui'"; }
@@ -345,5 +348,5 @@ binds {
 }
 
 switch-events {
-    lid-close { spawn "hyprlock" ; }
+    lid-close { spawn "swaylock" ; }
 }
