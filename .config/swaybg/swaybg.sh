@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JSON_PATH=$HOME/.config/niri/swaybg.json
+JSON_PATH=$HOME/.config/swaybg/swaybg.json
 
 size=$(jq 'length' $JSON_PATH)
 index=$(( RANDOM % size ))

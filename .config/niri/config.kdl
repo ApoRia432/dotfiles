@@ -4,6 +4,10 @@ output "eDP-1" {
     scale 2.0
 }
 
+clipboard {
+    disable-primary
+}
+
 workspace "one"
 workspace "two"
 workspace "three"
@@ -87,7 +91,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "mako"
 // spawn-sh-at-startup "swaybg -m center -i ~/Pictures/wallpaper/galbrena.png"
 // spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/wallpaper/yonagi.jpg"
-spawn-at-startup "~/.config/niri/swaybg.sh"
+spawn-at-startup "~/.config/swaybg/swaybg.sh"
 spawn-at-startup "xwayland-satellite"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
