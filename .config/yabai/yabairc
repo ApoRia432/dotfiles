@@ -45,7 +45,7 @@ yabai -m config window_zoom_persist on
 yabai -m config menubar_opacity 1.0
 
 # space
-MAX_SPACES=7
+MAX_SPACES=5
 current_spaces=$(yabai -m query --spaces | jq 'length')
 while [ "$current_spaces" -lt "$MAX_SPACES" ]; do
   yabai -m space --create
@@ -61,4 +61,3 @@ yabai -m signal --add event=space_changed action="sh ~/.config/yabai/plugins/foc
 #yabai -m signal --add event=space_changed action="sh ~/.config/yabai/plugins/another_space_window_opacity.sh"
 
 # window borders
-borders
