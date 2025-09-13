@@ -348,9 +348,11 @@ binds {
     // Mod+Shift+Space { switch-layout "prev"; }
 
     Mod+Print { spawn-sh "niri msg action screenshot && notify-send 'Screenshot saved'"; }
+    Mod+Shift+S { spawn-sh "niri msg action screenshot && notify-send 'Screenshot saved'"; }
     Print { spawn-sh "niri msg action screenshot-screen && notify-send 'Screenshot saved'"; }
     Alt+Print { spawn-sh "niri msg action screenshot-window && notify-send 'Screenshot saved'"; }
     Ctrl+Print { spawn "~/.config/niri/screen-record.sh";}
+    Mod+Ctrl+S { spawn "~/.config/niri/screen-record.sh";}
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
