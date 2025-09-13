@@ -63,6 +63,10 @@ gestures {
 }
 
 input {
+    mouse {
+		accel-speed 0.5
+		accel-profile "flat"
+	}
     touchpad {
         tap
         dwt
@@ -90,15 +94,15 @@ spawn-at-startup "fcitx5"
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
 // spawn-sh-at-startup "swaybg -m center -i ~/Pictures/wallpaper/galbrena.png"
-// spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/wallpaper/yonagi.jpg"
-spawn-at-startup "~/.config/swaybg/swaybg.sh"
+spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/wallpaper/yonagi.jpg"
+// spawn-at-startup "~/.config/swaybg/swaybg.sh"
 spawn-at-startup "xwayland-satellite"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 environment {
     DISPLAY ":0"
-    //DISPLAY null
+    // DISPLAY null
     QT_QPA_PLATFORM "wayland"
     MOZ_ENABLE_WAYLAND "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
