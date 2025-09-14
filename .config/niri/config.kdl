@@ -98,6 +98,7 @@ spawn-at-startup "mako"
 spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/wallpaper/yonagi.jpg"
 // spawn-at-startup "~/.config/swaybg/swaybg.sh"
 spawn-at-startup "xwayland-satellite"
+spawn-at-startup "swaylock"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
