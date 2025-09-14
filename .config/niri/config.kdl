@@ -116,6 +116,7 @@ environment {
     MOZ_ENABLE_WAYLAND "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     GTK_THEME "Adwaita:dark"
+    QT_STYLE_OVERRIDE "Adwaita-Dark"
 }
 
 animations {
@@ -125,26 +126,26 @@ animations {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+T hotkey-overlay-title="Open a Theme Selecter" { spawn-sh "alacritty --title 'TUI.float' -e sh -c '$HOME/personal/void-theme/bin/void-theme.sh'"; }
+    Mod+T hotkey-overlay-title="Open a Theme Selecter" repeat=false { spawn-sh "alacritty --title 'TUI.float' -e sh -c '$HOME/personal/void-theme/bin/void-theme.sh'"; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
-    Mod+B hotkey-overlay-title="Open a Browser: Chromium" { spawn "chromium"; }
-    Mod+D hotkey-overlay-title="Open a WebApp: Discord" { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
+    Mod+B hotkey-overlay-title="Open a Browser: Chromium" repeat=false { spawn "chromium"; }
+    Mod+D hotkey-overlay-title="Open a WebApp: Discord" repeat=false { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
 
-    Mod+Y hotkey-overlay-title="Open a WebApp: Youtube" { spawn-sh "chromium --new-window --app='https://youtube.com'"; }
-    Mod+X hotkey-overlay-title="Open a WebApp: X" { spawn-sh "chromium --new-window --app='https://x.com/home'"; }
-    Mod+G hotkey-overlay-title="Open a WebApp: Grok" { spawn-sh "chromium --new-window --app='https://grok.com'"; }
-    Mod+Shift+G hotkey-overlay-title="Open a WebApp: Gemini" { spawn-sh "chromium --new-window --app='https://gemini.google.com/app'"; }
-    Mod+Shift+A hotkey-overlay-title="Open a WebApp: Gemini" { spawn-sh "chromium --new-window --app='https://chatgpt.com'"; }
+    Mod+Y hotkey-overlay-title="Open a WebApp: Youtube" repeat=false { spawn-sh "chromium --new-window --app='https://youtube.com'"; }
+    Mod+X hotkey-overlay-title="Open a WebApp: X" repeat=false { spawn-sh "chromium --new-window --app='https://x.com/home'"; }
+    Mod+G hotkey-overlay-title="Open a WebApp: Grok" repeat=false { spawn-sh "chromium --new-window --app='https://grok.com'"; }
+    Mod+Shift+G hotkey-overlay-title="Open a WebApp: Gemini" repeat=false { spawn-sh "chromium --new-window --app='https://gemini.google.com/app'"; }
+    Mod+Shift+A hotkey-overlay-title="Open a WebApp: ChatGPT" repeat=false { spawn-sh "chromium --new-window --app='https://chatgpt.com'"; }
 
     // Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" allow-inhibiting=false { spawn "hyprlock"; }
     
-    Mod+A hotkey-overlay-title="Open a TUI: wiremix" { spawn-sh "ghostty --title='TUI.float' --command='wiremix'"; }
-    Mod+C hotkey-overlay-title="Open a TUI: bluetui" { spawn-sh "ghostty --title='TUI.float' --command='bluetui'"; }
-    Mod+P hotkey-overlay-title="Open a TUI: btop" { spawn-sh "ghostty --title='TUI.float' --command='btop'"; }
+    Mod+A hotkey-overlay-title="Open a TUI: wiremix" repeat=false { spawn-sh "ghostty --title='TUI.float' --command='wiremix'"; }
+    Mod+C hotkey-overlay-title="Open a TUI: bluetui" repeat=false { spawn-sh "ghostty --title='TUI.float' --command='bluetui'"; }
+    Mod+P hotkey-overlay-title="Open a TUI: btop" repeat=false { spawn-sh "ghostty --title='TUI.float' --command='btop'"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && ~/.config/niri/notify_volume.sh"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && ~/.config/niri/notify_volume.sh"; }
@@ -363,12 +364,12 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Mod+Print { spawn-sh "niri msg action screenshot && notify-send 'Screenshot saved'"; }
-    Mod+Shift+S { spawn-sh "niri msg action screenshot && notify-send 'Screenshot saved'"; }
-    Print { spawn-sh "niri msg action screenshot-screen && notify-send 'Screenshot saved'"; }
-    Alt+Print { spawn-sh "niri msg action screenshot-window && notify-send 'Screenshot saved'"; }
-    Ctrl+Print { spawn "~/.config/niri/screen-record.sh";}
-    Mod+Ctrl+S { spawn "~/.config/niri/screen-record.sh";}
+    Mod+Print repeat=false { spawn-sh "niri msg action screenshot && notify-send 'Screenshot saved'"; }
+    Mod+Shift+S repeat=false { spawn-sh "niri msg action screenshot && notify-send 'Screenshot saved'"; }
+    Print repeat=false { spawn-sh "niri msg action screenshot-screen && notify-send 'Screenshot saved'"; }
+    Alt+Print repeat=false{ spawn-sh "niri msg action screenshot-window && notify-send 'Screenshot saved'"; }
+    Ctrl+Print repeat=false { spawn "~/.config/niri/screen-record.sh";}
+    Mod+Ctrl+S repeat=false { spawn "~/.config/niri/screen-record.sh";}
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
