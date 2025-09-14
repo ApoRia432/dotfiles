@@ -63,6 +63,10 @@ gestures {
 }
 
 input {
+
+    focus-follows-mouse
+    warp-mouse-to-focus
+
     mouse {
 		accel-speed 0.5
 		accel-profile "flat"
@@ -150,6 +154,10 @@ binds {
     XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"; }
 
     Mod+O repeat=false { toggle-overview; }
+
+    MouseMiddle { toggle-overview; }
+    MouseForward { focus-column-right; }
+    MouseBack { focus-column-left; }
 
     Mod+Q { close-window; }
 
