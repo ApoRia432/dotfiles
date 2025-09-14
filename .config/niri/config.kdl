@@ -65,7 +65,6 @@ gestures {
 input {
 
     focus-follows-mouse
-    warp-mouse-to-focus
 
     mouse {
 		accel-speed 0.5
@@ -80,12 +79,17 @@ input {
 }
 
 window-rule {
-    match app-id="ghostty"
-    opacity 0.99
+    match app-id="ghostty|Alacritty"
+    opacity 0.98
 }
 
 window-rule {
     match title="TUI.float"
+    open-floating true
+}
+
+window-rule {
+    match title="Picture in picture"
     open-floating true
 }
 
@@ -120,6 +124,8 @@ animations {
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
+
+    Mod+T hotkey-overlay-title="Open a Theme Selecter" { spawn-sh "alacritty --title 'TUI.float' -e sh -c '$HOME/personal/void-theme/bin/void-theme.sh'"; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+B hotkey-overlay-title="Open a Browser: Chromium" { spawn "chromium"; }

@@ -39,3 +39,5 @@ keybind = ctrl+shift+t=new_tab
 keybind = ctrl+shift+n=next_tab
 keybind = ctrl+shift+p=previous_tab
 keybind = ctrl+shift+s=toggle_tab_overview
+
+config-file = ?../void-theme/current/ghostty.conf

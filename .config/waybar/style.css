@@ -1,5 +1,4 @@
-@define-color foreground #c8d3f5;
-@define-color background #222436;
+@import "../void-theme/current/waybar.css";
 
 * {
   background-color: @background;
