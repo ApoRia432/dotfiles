@@ -125,9 +125,9 @@ animations {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+T hotkey-overlay-title="Open a Theme Selecter" repeat=false { spawn-sh "alacritty --title 'TUI.float' -e sh -c '$HOME/personal/void-theme/bin/void-theme.sh'"; }
+    Mod+T hotkey-overlay-title="Open a Theme Selecter" repeat=false { spawn-sh "ghostty --title='TUI.float' --command='$HOME/personal/void-theme/bin/void-theme.sh'"; }
 
-    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn-sh "ghostty +new-window"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+B hotkey-overlay-title="Open a Browser: Chromium" repeat=false { spawn "chromium"; }
     Mod+D hotkey-overlay-title="Open a WebApp: Discord" repeat=false { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
 

@@ -8,7 +8,7 @@ font-feature = -dlig
 # theme = catppuccin-mocha
 # theme = catppuccin-macchiato
 # theme = catppuccin-frappe
-theme = tokyonight_night
+theme = "TokyoNight Night"
 # theme = tokyonight_moon
 # theme = nordfox
 
@@ -21,6 +21,8 @@ theme = tokyonight_night
 # padding
 window-padding-x = 6
 window-padding-y = 6
+
+app-notifications = no-config-reload, no-clipboard-copy
 
 # window
 window-theme = ghostty
