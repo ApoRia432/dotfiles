@@ -97,7 +97,6 @@ hotkey-overlay {
 spawn-at-startup "pipewire"
 spawn-at-startup "fcitx5"
 spawn-at-startup "waybar"
-spawn-sh-at-startup "walker --gapplication-service"
 spawn-at-startup "mako"
 // spawn-sh-at-startup "swaybg -m center -i ~/Pictures/wallpaper/galbrena.png"
 // spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/wallpaper/yonagi.jpg"
@@ -128,7 +127,7 @@ binds {
 
     Mod+T hotkey-overlay-title="Open a Theme Selecter" repeat=false { spawn-sh "alacritty --title 'TUI.float' -e sh -c '$HOME/personal/void-theme/bin/void-theme.sh'"; }
 
-    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn-sh "ghostty +new-window"; }
     Mod+B hotkey-overlay-title="Open a Browser: Chromium" repeat=false { spawn "chromium"; }
     Mod+D hotkey-overlay-title="Open a WebApp: Discord" repeat=false { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
 
@@ -138,8 +137,9 @@ binds {
     Mod+Shift+G hotkey-overlay-title="Open a WebApp: Gemini" repeat=false { spawn-sh "chromium --new-window --app='https://gemini.google.com/app'"; }
     Mod+Shift+A hotkey-overlay-title="Open a WebApp: ChatGPT" repeat=false { spawn-sh "chromium --new-window --app='https://chatgpt.com'"; }
 
-    // Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
+    // Mod+Space hotkey-overlay-title="Run an Application: Rofi" { spawn-sh "rofi -show drun"; }
+    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    // Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" allow-inhibiting=false { spawn "hyprlock"; }
     
