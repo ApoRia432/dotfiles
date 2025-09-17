@@ -2,3 +2,5 @@
 .env
 
 !.tmux/.gitkeep
+.config/opencode/.opencode.json
+.opencode

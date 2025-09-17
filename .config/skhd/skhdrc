@@ -1,5 +1,5 @@
 # web apps
-alt - d :  /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app="https://discord.com/channels/@me"
+alt - d : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app="https://discord.com/channels/@me"
 
 # change window focus within space
 alt - j : yabai -m window --focus south

@@ -17,8 +17,10 @@ export GTK_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS=@im=fcitx5
 export DOCKER_BUILDKIT=1
+export EDITOR=nvim
 
 alias vi=vim
+alias nv=nvim
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
