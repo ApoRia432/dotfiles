@@ -1,45 +1,24 @@
-# font
-# font-family = "FiraCode Nerd Font Mono"
-# font-family = "JetBrainsMono Nerd Font Mono"
-#font-family = "UbuntuMono Nerd Font"
-#font-family = "HackNerdFontMono"
-# font-family = "CaskaydiaMono Nerd Font Mono"
 font-family = "Iosevka Nerd Font Mono"
 font-size = 18
 font-feature = -dlig
 
-# theme
-# theme = rose-pine-moon
-# theme = catppuccin-mocha
-# theme = catppuccin-macchiato
-theme = "Nord"
 theme = "TokyoNight Night"
-# theme = tokyonight_moon
-#theme = Dracula
-#theme = Kanagawa Wave
-#theme = Kanagawa Dragon
 
-# background
-# background = 111111
 # background = 000000
-# background = 1C1021
-background-opacity = 0.97
+background-opacity = 0.96
 background-blur = true
 background-blur-radius = 20
 
-# window
 window-theme = ghostty
 gtk-titlebar = false
 confirm-close-surface = false
 #macos-non-native-fullscreen = true
 macos-titlebar-style = hidden
 
-#cursor
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 
-#keybind
 keybind = ctrl+shift+t=new_tab
 keybind = ctrl+shift+n=next_tab
 keybind = ctrl+shift+p=previous_tab
