@@ -1,2 +1,3 @@
+alt - b : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window
 alt - d : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app="https://discord.com/channels/@me"
 alt - return : open /Applications/Ghostty.app
