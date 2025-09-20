@@ -151,7 +151,7 @@ binds {
     
     Mod+A hotkey-overlay-title="Open a TUI: wiremix" repeat=false { spawn-sh "ghostty --class='TUI.float' --command='wiremix'"; }
     Mod+C hotkey-overlay-title="Open a TUI: bluetui" repeat=false { spawn-sh "ghostty --class='TUI.float' --command='bluetui'"; }
-    Mod+P hotkey-overlay-title="Open a TUI: btop" repeat=false { spawn-sh "ghostty --class='TUI.float' --command='btop'"; }
+    Mod+P hotkey-overlay-title="Open a TUI: btop" repeat=false { spawn-sh "ghostty --font-size=13 --class='TUI.float' --command='btop'"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && ~/.config/niri/notify_volume.sh"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && ~/.config/niri/notify_volume.sh"; }
