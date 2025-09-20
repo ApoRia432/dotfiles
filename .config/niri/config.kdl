@@ -64,7 +64,7 @@ gestures {
 
 input {
 
-    focus-follows-mouse
+    // focus-follows-mouse
 
     mouse {
 		accel-speed 0.25
