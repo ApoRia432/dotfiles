@@ -145,8 +145,8 @@ binds {
     Mod+Shift+A hotkey-overlay-title="Open a WebApp: ChatGPT" repeat=false { spawn-sh "chromium --new-window --app='https://chatgpt.com'"; }
 
     // Mod+Space hotkey-overlay-title="Run an Application: Rofi" { spawn-sh "rofi -show drun"; }
-    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    // Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
+    // Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" allow-inhibiting=false { spawn "hyprlock"; }
     

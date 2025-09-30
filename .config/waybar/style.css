@@ -19,6 +19,14 @@
   margin-right: 8px;
 }
 
+#custom-void {
+  font-size: 16px;
+  background-image: url('/home/yonagi/.config/waybar/void.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #workspaces button {
   all: initial;
   padding: 0 6px;

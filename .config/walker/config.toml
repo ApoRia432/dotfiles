@@ -1,0 +1,13 @@
+[builtins.symbols]
+after_copy = ""
+hidden = true
+
+[builtins.runner]
+hidden = true
+
+[buildins.ssh]
+hidden = true
+
+[builtins.websearch]
+switcher_only = true
+hidden = true
