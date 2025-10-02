@@ -1,3 +1,11 @@
+[providers]
+default = [
+  "desktopapplications",
+  "calc",
+  "menus",
+] # providers to be queried by default
+empty = ["desktopapplications"] # providers to be queried when query is empty
+
 [builtins.symbols]
 after_copy = ""
 hidden = true
