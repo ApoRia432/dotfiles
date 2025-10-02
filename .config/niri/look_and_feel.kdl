@@ -1,0 +1,46 @@
+prefer-no-csd
+
+layout {
+    gaps 10
+
+    border {
+        on
+        width 2
+        active-color "#9bb4bc"
+        inactive-color "#505050"
+    }
+
+    focus-ring {
+        off
+        width 2
+        active-color "#9bb4bc"
+        inactive-color "#505050"
+    }
+}
+
+window-rule {
+    open-maximized true
+
+    geometry-corner-radius 6
+    clip-to-geometry true
+
+    draw-border-with-background false
+}
+
+window-rule {
+    match app-id="com.mitchellh.ghostty|Alacritty"
+
+    opacity 0.986
+}
+
+window-rule {
+    match title="Picture in picture|Open File"
+    match app-id="TUI.float|net.lutris.Lutris|steam"
+
+    open-floating true
+    open-maximized false
+}
+
+overview {
+    zoom 0.67
+}

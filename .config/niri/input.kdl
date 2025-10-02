@@ -1,0 +1,29 @@
+input {
+    focus-follows-mouse max-scroll-amount="0%"
+
+    mouse {
+        accel-speed 0.25
+        accel-profile "flat"
+    }
+    
+    touchpad {
+        tap
+        dwt
+        natural-scroll
+        scroll-factor 0.1
+    }
+}
+
+cursor {
+    hide-when-typing
+}
+
+clipboard {
+    disable-primary
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}

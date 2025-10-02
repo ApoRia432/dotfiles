@@ -1,0 +1,12 @@
+spawn-at-startup "pipewire"
+spawn-at-startup "waybar"
+spawn-at-startup "~/.config/void-theme/current/swaybg.sh"
+spawn-at-startup "elephant"
+spawn-at-startup "walker --gapplication-service"
+spawn-at-startup "mako -c ~/.config/void-theme/current/mako.ini"
+spawn-at-startup "fcitx5"
+spawn-at-startup "hyprlock"
+
+hotkey-overlay {
+    skip-at-startup
+}

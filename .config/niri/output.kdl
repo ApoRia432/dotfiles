@@ -1,0 +1,8 @@
+output "eDP-1" {
+    scale 2.0
+}
+
+workspace "one"
+workspace "two"
+workspace "three"
+workspace "four"
