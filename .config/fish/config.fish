@@ -11,7 +11,7 @@ export GOPATH=$(go env GOPATH)
 export PATH="$PATH:$GOPATH/bin"
 
 # .local/bin
-export PATH="$HOME/.local/bin:$PATH"
+fish_add_path $HOME/.local/bin
 
 source "$HOME/.cargo/env.fish"
 
