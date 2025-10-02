@@ -94,7 +94,7 @@
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "ghostty --title=TUI.float --command=btop"
+    "on-click": "ghostty --font-size=13 --class=TUI.float --command=btop"
   },
   "clock": {
     "format": "{:%A %H:%M}",
@@ -112,7 +112,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "ghostty --title=TUI.float2 --command=impala"
+    "on-click": "ghostty --class='TUI.float' --command=impala"
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -138,11 +138,11 @@
     "format-disabled": "󰂲",
     "format-connected": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "ghostty --title=TUI.float --command=bluetui"
+    "on-click": "ghostty --class='TUI.float' --command=bluetui"
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "ghostty --title=TUI.float --command=wiremix",
+    "on-click": "ghostty --class='TUI.float' --command=wiremix",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
