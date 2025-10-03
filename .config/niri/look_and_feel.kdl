@@ -21,8 +21,8 @@ layout {
 window-rule {
     open-maximized true
 
-    geometry-corner-radius 6
-    clip-to-geometry true
+    geometry-corner-radius 0
+    clip-to-geometry false
 
     draw-border-with-background false
 }
@@ -30,7 +30,7 @@ window-rule {
 window-rule {
     match app-id="com.mitchellh.ghostty|Alacritty"
 
-    opacity 0.986
+    opacity 0.97
 }
 
 window-rule {
@@ -43,4 +43,10 @@ window-rule {
 
 overview {
     zoom 0.67
+}
+
+animations {
+    window-open {
+        curve "ease-out-quad"
+    }
 }
