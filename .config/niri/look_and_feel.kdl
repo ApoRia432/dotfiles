@@ -52,6 +52,18 @@ overview {
 }
 
 animations {
+    workspace-switch {
+        spring damping-ratio=1.1 stiffness=1000 epsilon=0.001
+    }
+    horizontal-view-movement {
+        spring damping-ratio=1.2 stiffness=1000 epsilon=0.001
+    }
+    window-resize {
+        spring damping-ratio=1.2 stiffness=1000 epsilon=0.001
+    }
+    window-movement {
+        spring damping-ratio=1.2 stiffness=1000 epsilon=0.001
+    }
     window-open {
         curve "ease-out-quad"
     }
