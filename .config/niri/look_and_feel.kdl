@@ -16,6 +16,18 @@ layout {
         active-color "#9bb4bc"
         inactive-color "#505050"
     }
+
+    preset-column-widths {
+        fixed 1680
+        fixed 1440
+        fixed 1280
+    }
+    
+    preset-window-heights {
+        fixed 945
+        fixed 810
+        fixed 720
+    }
 }
 
 window-rule {
