@@ -41,6 +41,12 @@ window-rule {
     open-maximized false
 }
 
+window-rule {
+    match app-id="TUI.float"
+
+    opacity 0.95
+}
+
 overview {
     zoom 0.67
 }
