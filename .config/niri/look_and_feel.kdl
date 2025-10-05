@@ -63,6 +63,11 @@ overview {
     zoom 0.67
 }
 
+cursor {
+    xcursor-size 16
+    xcursor-theme "Adwaita"
+}
+
 animations {
     workspace-switch {
         spring damping-ratio=1.1 stiffness=1000 epsilon=0.001
