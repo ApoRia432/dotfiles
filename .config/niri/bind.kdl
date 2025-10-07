@@ -1,5 +1,5 @@
 switch-events {
-    lid-close { spawn "swaylock" ; }
+    lid-close { spawn "hyprlock" ; }
 }
 
 binds {
@@ -9,9 +9,8 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+B hotkey-overlay-title="Open a Browser: Chromium" repeat=false { spawn "chromium"; }
-    Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn-sh "walker > $HOME/walker.log 2>&1"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    // Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" allow-inhibiting=false { spawn "hyprlock"; }
+    Mod+Space hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     
     Mod+D hotkey-overlay-title="Open a WebApp: Discord" repeat=false { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
     Mod+Y hotkey-overlay-title="Open a WebApp: Youtube" repeat=false { spawn-sh "chromium --new-window --app='https://youtube.com'"; }
