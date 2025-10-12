@@ -5,7 +5,7 @@ switch-events {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+T hotkey-overlay-title="Open a Theme Selecter" repeat=false { spawn-sh "ghostty --class='TUI.float' --command='$HOME/personal/void-theme/bin/void-theme.sh'"; }
+    Mod+T hotkey-overlay-title="Open a Theme Selecter" repeat=false { spawn-sh "ghostty --class='TUI.float' --command='void-theme'"; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+B hotkey-overlay-title="Open a Browser: Chromium" repeat=false { spawn "chromium"; }
