@@ -47,7 +47,7 @@ window-rule {
 
 window-rule {
     match title="Picture in picture|Open File"
-    match app-id="TUI.float|net.lutris.Lutris|steam"
+    match app-id="TUI.float|net.lutris.Lutris|steam|LocalSend"
 
     open-floating true
     open-maximized false
