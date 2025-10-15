@@ -1,6 +1,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+bind ': menu-complete'
+bind ': menu-complete-backward'
+
 . "$HOME/.cargo/env"
 export GOPATH=$(go env GOPATH)
 export PATH="$PATH:$GOPATH/bin"
