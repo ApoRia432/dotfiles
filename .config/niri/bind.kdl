@@ -156,4 +156,5 @@ binds {
     Ctrl+Alt+Delete { quit; }
 
     Mod+Shift+P { power-off-monitors; }
+    XF86Favorites { power-off-monitors; }
 }
