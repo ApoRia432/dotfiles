@@ -9,7 +9,8 @@ export GOPATH=$(go env GOPATH)
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/.local/bin:$PATH"
 
-alias ls='ls --color=auto'
+alias open="xdg-open"
+alias ls="ls --color=auto"
 alias xbps-install="sudo xbps-install"
 alias xbps-remove="sudo xbps-remove"
 
