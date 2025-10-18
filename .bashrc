@@ -8,6 +8,9 @@ bind ': menu-complete-backward'
 export GOPATH=$(go env GOPATH)
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/opt/gcc-15/bin:$PATH"
+export CC="$(which gcc)"
+export CXX="$(which g++)"
 
 alias open="xdg-open"
 alias ls="ls --color=auto"
