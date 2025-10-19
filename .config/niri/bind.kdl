@@ -14,6 +14,7 @@ binds {
     
     Mod+D hotkey-overlay-title="Open a WebApp: Discord" repeat=false { spawn-sh "chromium --new-window --app='https://discord.com/channels/@me'"; }
     Mod+Y hotkey-overlay-title="Open a WebApp: Youtube" repeat=false { spawn-sh "chromium --new-window --app='https://youtube.com'"; }
+    Mod+X hotkey-overlay-title="Open a WebApp: Youtube" repeat=false { spawn-sh "chromium --new-window --app='https://x.com/home'"; }
     Mod+G hotkey-overlay-title="Open a WebApp: Grok" repeat=false { spawn-sh "chromium --new-window --app='https://grok.com'"; }
     
     Mod+A hotkey-overlay-title="Open a TUI: wiremix" repeat=false { spawn-sh "ghostty --class='TUI.float' --command='wiremix'"; }
