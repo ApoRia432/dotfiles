@@ -11,9 +11,11 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/opt/gcc-15/bin:$PATH"
 export CC="$(which gcc)"
 export CXX="$(which g++)"
+export EDITOR=nvim
 
 alias open="xdg-open"
 alias ls="ls --color=auto"
+alias grep='grep --color=auto'
 alias xbps-install="sudo xbps-install"
 alias xbps-remove="sudo xbps-remove"
 
