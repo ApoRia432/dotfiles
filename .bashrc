@@ -17,6 +17,10 @@ export EDITOR=nvim
 
 alias ls="ls --color=auto"
 alias grep='grep --color=auto'
+alias gcm="git commit"
+alias gcma="git commit --amend"
+alias grbc="git rebase --continue"
+alias gpf="git push --force-with-lease origin HEAD"
 
 git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
