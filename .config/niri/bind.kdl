@@ -1,5 +1,5 @@
 switch-events {
-    lid-close { spawn "hyprlock" ; }
+    lid-open { spawn "hyprlock" ; }
 }
 
 binds {
