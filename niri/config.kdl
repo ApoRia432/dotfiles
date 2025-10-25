@@ -1,0 +1,6 @@
+include "output.kdl"
+include "input.kdl"
+include "look_and_feel.kdl"
+include "startup.kdl"
+include "environment.kdl"
+include "bind.kdl"

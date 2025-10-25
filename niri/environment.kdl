@@ -1,0 +1,10 @@
+environment {
+    DISPLAY ":0"
+    XDG_SESSION_TYPE "wayland"
+    QT_QPA_PLATFORM "wayland"
+    GDK_BACKEND "wayland"
+    MOZ_ENABLE_WAYLAND "1"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    GTK_THEME "Adwaita:dark"
+    QT_STYLE_OVERRIDE "Adwaita-Dark"
+}

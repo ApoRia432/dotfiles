@@ -1,0 +1,99 @@
+prefer-no-csd
+
+layout {
+    gaps 8
+
+    //blur {
+        //on
+        //passes 3
+        //radius 3.0
+        //noise 0.2
+    //}
+
+    border {
+        on
+        width 2
+        active-color "#9bb4bc"
+        active-gradient from="#7dcfff" to="#9ece6a" angle=180
+        inactive-color "#505050"
+    }
+
+    focus-ring {
+        off
+        width 2
+        active-color "#9bb4bc"
+        active-gradient from="#7dcfff" to="#9ece6a" angle=180
+        inactive-color "#505050"
+    }
+
+    preset-column-widths {
+        fixed 1680
+        fixed 1440
+        fixed 1280
+    }
+    
+    preset-window-heights {
+        fixed 945
+        fixed 810
+        fixed 720
+    }
+}
+
+window-rule {
+    open-maximized true
+
+    geometry-corner-radius 0
+    clip-to-geometry false
+
+    draw-border-with-background false
+}
+
+window-rule {
+    match app-id="com.mitchellh.ghostty|Alacritty"
+
+    opacity 0.97
+}
+
+window-rule {
+    match title="Picture in picture|Open File"
+    match app-id="TUI.float|net.lutris.Lutris|steam|LocalSend"
+
+    open-floating true
+    open-maximized false
+}
+
+window-rule {
+    match app-id="TUI.float"
+
+    opacity 0.95
+}
+
+overview {
+    zoom 0.67
+}
+
+cursor {
+    xcursor-size 24
+    xcursor-theme "Adwaita"
+}
+
+animations {
+    workspace-switch {
+        spring damping-ratio=1.1 stiffness=1000 epsilon=0.001
+    }
+    horizontal-view-movement {
+        spring damping-ratio=1.2 stiffness=1000 epsilon=0.001
+    }
+    window-open {
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.001
+    }
+    window-close {
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.001
+    }
+    window-resize {
+        spring damping-ratio=1.2 stiffness=1000 epsilon=0.001
+    }
+    window-movement {
+        spring damping-ratio=1.2 stiffness=1000 epsilon=0.001
+    }
+}

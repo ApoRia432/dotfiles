@@ -1,0 +1,19 @@
+theme = "TokyoNight Night"
+
+font-family = "Iosevka Nerd Font Mono"
+font-size = 14
+font-feature = -dlig
+
+window-padding-x = 6
+window-padding-y = 6
+
+app-notifications = no-config-reload, no-clipboard-copy
+
+window-theme = ghostty
+window-decoration = none
+gtk-titlebar = true
+confirm-close-surface = false
+
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor

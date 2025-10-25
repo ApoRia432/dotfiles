@@ -1,0 +1,14 @@
+spawn-sh-at-startup "swaybg -m fill -i ~/.config/swaybg/chisa.png"
+spawn-at-startup "pipewire"
+spawn-at-startup "waybar"
+spawn-at-startup "swaybg"
+spawn-at-startup "elephant"
+spawn-sh-at-startup "walker --gapplication-service"
+spawn-sh-at-startup "mako -c ~/.config/mako/mako.ini"
+spawn-at-startup "fcitx5"
+// spawn-sh-at-startup "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+spawn-at-startup "hyprlock"
+
+hotkey-overlay {
+    skip-at-startup
+}
