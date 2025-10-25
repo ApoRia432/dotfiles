@@ -22,11 +22,11 @@ link_file() {
         return
     fi
     if [[ -f "$link_target" ]]; then
-        echo "$file_name \e[31mexists\e[0m"
+        echo -e "$file_name \e[31mexists\e[0m"
         return
     fi
     # create symbolic link
-    ln -s "$link_file" "$link_target" && echo "$file_name \e[32mlinked\e[0m"
+    ln -s "$link_file" "$link_target" && echo -e "$file_name \e[32mlinked\e[0m"
 }
 
 link_file "$tmux" "$HOME"
