@@ -5,6 +5,8 @@ bind 'set show-all-if-ambiguous on'
 
 bind ': menu-complete'
 bind ': menu-complete-backward'
+bind ': forward-word'
+bind ': backward-word'
 
 . "$HOME/.cargo/env"
 export GOPATH=$(go env GOPATH)
