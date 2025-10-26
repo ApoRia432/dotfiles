@@ -23,6 +23,7 @@ alias xbps-remove="sudo xbps-remove"
 alias gcm="git commit"
 alias gcma="git commit --amend"
 alias grbc="git rebase --continue"
+alias gpush="git push origin HEAD"
 alias gpf="git push --force-with-lease origin HEAD"
 
 git_branch() {
