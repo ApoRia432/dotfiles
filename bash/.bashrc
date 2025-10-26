@@ -8,11 +8,6 @@ bind ': menu-complete-backward'
 bind ': forward-word'
 bind ': backward-word'
 
-. "$HOME/.cargo/env"
-export GOPATH=$(go env GOPATH)
-export PATH="$PATH:$GOPATH/bin"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.local/opt/gcc-15/bin:$PATH"
 export CC="$(which gcc)"
 export CXX="$(which g++)"
 export EDITOR=nvim
@@ -29,14 +24,18 @@ git_branch() {
 }
 PS1='-> \[\e[32m\]\W\[\e[0m\]$(git_branch) $ '
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # bash completion
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
-# bun
+. "$HOME/.cargo/env"
+export GOPATH=$(go env GOPATH)
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/opt/gcc-15/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/opt/homebrew/bin/:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
