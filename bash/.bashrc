@@ -8,10 +8,6 @@ bind ': menu-complete-backward'
 bind ': forward-word'
 bind ': backward-word'
 
-export CC="$(which gcc)"
-export CXX="$(which g++)"
-export EDITOR=nvim
-
 alias ls="ls --color=auto"
 alias grep='grep --color=auto'
 alias gcm="git commit"
@@ -27,6 +23,10 @@ PS1='-> \[\e[32m\]\W\[\e[0m\]$(git_branch) $ '
 
 # bash completion
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+export CC="$(which gcc)"
+export CXX="$(which g++)"
+export EDITOR=nvim
 
 . "$HOME/.cargo/env"
 export GOPATH=$(go env GOPATH)
