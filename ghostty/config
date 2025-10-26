@@ -9,21 +9,16 @@ theme = "TokyoNight Night"
 # theme = "Vague"
 
 # background = 000000
-background-opacity = 0.94
+background-opacity = 0.97
 background-blur = true
 
 window-theme = ghostty
 window-decoration = false
 confirm-close-surface = false
 macos-window-shadow = false
-#macos-non-native-fullscreen = true
+macos-non-native-fullscreen = true
 macos-titlebar-style = hidden
 
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
-
-keybind = ctrl+shift+t=new_tab
-keybind = ctrl+shift+n=next_tab
-keybind = ctrl+shift+p=previous_tab
-keybind = ctrl+shift+s=toggle_tab_overview
