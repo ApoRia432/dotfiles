@@ -1,4 +1,4 @@
 alt - return : open /Applications/Ghostty.app
-alt - b : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window
-alt - d : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app="https://discord.com/channels/@me"
-alt - g : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app="https://grok.com"
+alt - shift - b : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window
+alt - shift - d : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app="https://discord.com/channels/@me"
+alt - shift - g : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window --app="https://grok.com"
