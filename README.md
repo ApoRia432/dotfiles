@@ -1,5 +1,7 @@
 # dotfiles
 
+dotfiles for void-linux
+
 ## how 2 use
 
 ```bash
