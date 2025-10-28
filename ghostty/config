@@ -1,26 +1,23 @@
 font-family = "Iosevka Nerd Font Mono"
 font-size = 18
 font-feature = -dlig
+font-thicken = true
+font-thicken-strength = 80
 
-theme = "TokyoNight Night"
-# theme = "TokyoNight Moon"
-# theme = "Catppuccin Mocha"
-# theme = "Catppuccin Macchiato"
-# theme = "Vague"
+theme = "Catppuccin Latte"
 
-# background = 000000
-background-opacity = 0.97
+background-opacity = 0.9
 background-blur = true
 
 window-padding-x = 8
 window-padding-y = 8
 
 window-theme = ghostty
-window-decoration = false
 confirm-close-surface = false
-macos-window-shadow = false
 macos-non-native-fullscreen = true
 macos-titlebar-style = hidden
+# macos-window-shadow = false
+# window-decoration = false
 
 cursor-style = block
 cursor-style-blink = true
