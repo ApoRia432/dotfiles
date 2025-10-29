@@ -13,16 +13,20 @@ layout {
     border {
         on
         width 2
-        active-color "#9bb4bc"
-        active-gradient from="#7dcfff" to="#9ece6a" angle=180
+        // active-color "#9bb4bc"
+        // active-color "#dcd7ba"
+        active-color "#1e66f5"
+        // active-gradient from="#7dcfff" to="#9ece6a" angle=180
         inactive-color "#505050"
     }
 
     focus-ring {
         off
         width 2
-        active-color "#9bb4bc"
-        active-gradient from="#7dcfff" to="#9ece6a" angle=180
+        // active-color "#9bb4bc"
+        // active-color "#dcd7ba"
+        active-color "#40a02b"
+        // active-gradient from="#7dcfff" to="#9ece6a" angle=180
         inactive-color "#505050"
     }
 
@@ -51,7 +55,7 @@ window-rule {
 window-rule {
     match app-id="com.mitchellh.ghostty|Alacritty"
 
-    opacity 0.97
+    opacity 0.94
 }
 
 window-rule {

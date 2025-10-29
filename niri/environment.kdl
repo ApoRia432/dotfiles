@@ -5,6 +5,8 @@ environment {
     GDK_BACKEND "wayland"
     MOZ_ENABLE_WAYLAND "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
-    GTK_THEME "Adwaita:dark"
-    QT_STYLE_OVERRIDE "Adwaita-Dark"
+    GTK_THEME "Adwaita"
+    QT_STYLE_OVERRIDE "Adwaita"
+    // GTK_THEME "Adwaita:dark"
+    // QT_STYLE_OVERRIDE "Adwaita-Dark"
 }
