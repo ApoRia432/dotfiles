@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theme_file="chromium/chromium.jsonc"
+theme_file="chromium/chromium.json"
 chrome_dir="/etc/opt/chrome/policies/managed"
 chromium_dir="/etc/chromium/policies/managed"
 
@@ -10,11 +10,11 @@ install_chromium() {
         sudo chmod a+rw $chromium_dir
     fi
     if [[ -f "$chromium_dir/theme.json" ]]; then
-        echo "chromium-theme is \e[32malready installed\e[0m"
+        echo -e "chromium-theme is \e[32mupdated\e[0m"
     else
-        cat "$theme_file" > "$chromium_dir/theme.json"
-        echo "\e[32msuccess\e[0m to installed chromium theme."
+        echo -e "\e[32msuccess\e[0m to installed chromium theme."
     fi
+    cat "$theme_file" > "$chromium_dir/theme.json"
 }
 
 install_chrome() {
@@ -23,11 +23,11 @@ install_chrome() {
         sudo chmod a+rw $chrome_dir
     fi
     if [[ -f "$chrome_dir/theme.json" ]]; then
-        echo "google-chrome theme is \e[32malready installed\e[0m"
+        echo -e "google-chrome theme is \e[32mupdated\e[0m"
     else
-        cat "$theme_file" > "$chrome_dir/theme.json"
-        echo "\e[32msuccess\e[0m to installed google-chrome theme."
+        echo -e "\e[32msuccess\e[0m to installed google-chrome theme."
     fi
+    cat "$theme_file" > "$chrome_dir/theme.json"
 }
 
 
