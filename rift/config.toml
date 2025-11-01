@@ -17,7 +17,7 @@ hot_reload = true
 mode = "traditional"
 
 [settings.layout.stack]
-stack_offset = 40.0
+stack_offset = 0.0
 default_orientation = "perpendicular"
 
 [settings.layout.gaps]
@@ -66,20 +66,15 @@ auto_assign_windows = true
 preserve_focus_per_workspace = true
 workspace_auto_back_and_forth = false
 
-default_workspace = 0
-
 app_rules = [
-    { title_substring = "Preferences", floating = true },
-    { app_id = "com.apple", floating = false },
-    { app_id = "com.apple.systempreferences", floating = false },
+    { app_name = "System Settings", floating = true },
+    { app_id = "com.apple.systempreferences", floating = true },
 ]
 
 [modifier_combinations]
 comb1 = "Alt + Shift"
 
 [keys]
-"Alt + Z" = "toggle_space_activated"
-
 "Alt + H" = { move_focus = "left" }
 "Alt + J" = { move_focus = "down" }
 "Alt + K" = { move_focus = "up" }
@@ -104,21 +99,11 @@ comb1 = "Alt + Shift"
 
 "Alt + Tab" = "switch_to_last_workspace"
 
-"Alt + Shift + Left" = { join_window = "left" }
-"Alt + Shift + Right" = { join_window = "right" }
-"Alt + Shift + Up" = { join_window = "up" }
-"Alt + Shift + Down" = { join_window = "down" }
 "Alt + Comma" = "toggle_stack"
 "Alt + Slash" = "toggle_orientation"
-"Alt + Ctrl + E" = "unjoin_windows"
 
-"Alt + V" = "toggle_window_floating"
-"Alt + F" = "toggle_fullscreen"
-"Alt + Shift + F" = "toggle_fullscreen_within_gaps"
-"comb1 + Ctrl + Space" = "toggle_focus_floating" # briefly bring focus to floating window
+"Alt + V" = "toggle_focus_floating"
+"Alt + Shift + F" = "toggle_fullscreen"
 
-"Alt + Shift + Equal" = "resize_window_grow"
-"Alt + Shift + Minus" = "resize_window_shrink"
-
-"Alt + Ctrl + S" = "serialize"
-"Alt + Ctrl + Q" = "save_and_exit"
+"Alt + Equal" = "resize_window_grow"
+"Alt + Minus" = "resize_window_shrink"
