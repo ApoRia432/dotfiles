@@ -102,7 +102,7 @@ comb1 = "Alt + Shift"
 "Alt + Comma" = "toggle_stack"
 "Alt + Slash" = "toggle_orientation"
 
-"Alt + V" = "toggle_focus_floating"
+"Alt + V" = "toggle_window_floating"
 "Alt + Shift + F" = "toggle_fullscreen"
 
 "Alt + Equal" = "resize_window_grow"
