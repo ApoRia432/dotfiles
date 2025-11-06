@@ -27,6 +27,7 @@ PS1='-> \[\e[32m\]\W\[\e[0m\]$(git_branch) $ '
 export CC="$(which gcc)"
 export CXX="$(which g++)"
 export EDITOR=nvim
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
 . "$HOME/.cargo/env"
 export GOPATH=$(go env GOPATH)

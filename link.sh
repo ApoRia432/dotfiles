@@ -7,6 +7,7 @@ bash_profile="bash/.bash_profile"
 ghostty="ghostty"
 nvim="nvim"
 rift="rift"
+ripgrep="ripgrep/.ripgreprc"
 aerospace="aerospace"
 skhd="skhd"
 
@@ -29,6 +30,7 @@ link_file() {
 link_file "$tmux" "$HOME"
 link_file "$bash_rc" "$HOME"
 link_file "$bash_profile" "$HOME"
+link_file "$ripgrep" "$HOME"
 
 link_file "$rift" "$HOME/.config"
 link_file "$ghostty" "$HOME/.config"
