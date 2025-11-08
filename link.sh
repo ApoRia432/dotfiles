@@ -18,7 +18,7 @@ link_file() {
     file_name="$(basename ${1})"
     link_target="${2}/$file_name"
     if [[ -L "$link_target" ]]; then
-        echo -e "$file_name \e[32malready linked\e[0m"
+        ln -sf "$link_file" "$link_target" && echo -e "$file_name \e[32mupdate link\e[0m"
         return
     fi
     if [[ -f "$link_target" ]]; then
