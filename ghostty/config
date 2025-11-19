@@ -4,6 +4,8 @@ font-family = "Iosevka Nerd Font Mono"
 font-size = 15
 font-feature = -dlig
 
+background-opacity = 0.85
+
 window-padding-x = 6
 window-padding-y = 6
 
