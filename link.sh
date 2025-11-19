@@ -13,6 +13,7 @@ waybar="waybar"
 walker="walker"
 hypr="hypr"
 dwl="dwl"
+wlogout="wlogout"
 
 link_file() {
     link_file="$(pwd)/${1}"
@@ -43,3 +44,4 @@ link_file "$walker" "$HOME/.config"
 link_file "$swaybg" "$HOME/.config"
 link_file "$hypr" "$HOME/.config"
 link_file "$dwl" "$HOME/.config"
+link_file "$wlogout" "$HOME/.config"
