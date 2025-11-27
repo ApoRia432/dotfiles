@@ -7,7 +7,7 @@ kill_if_exists() {
 }
 
 kill_if_exists swaybg
-swaybg -m fill -i ~/.config/swaybg/chisa.png &
+swaybg -m fill -i ~/.config/swaybg/lynae.jpg &
 
 kill_if_exists mako
 mako -c ~/.config/mako/mako.ini &
