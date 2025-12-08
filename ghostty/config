@@ -1,10 +1,10 @@
-theme = "Catppuccin Latte"
+theme = "miniautumn"
 
 font-family = "Iosevka Nerd Font Mono"
-font-size = 15
+font-size = 20
 font-feature = -dlig
 
-background-opacity = 0.85
+# background-opacity = 0.94
 
 window-padding-x = 6
 window-padding-y = 6

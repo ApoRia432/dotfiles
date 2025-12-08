@@ -1,0 +1,28 @@
+background = #262029
+foreground = #d7d5cd
+
+cursor-color = #d7d5cd
+cursor-text = #262029
+
+selection-background = #423b45
+selection-foreground = #d7d5cd
+
+# Normal colors
+palette = 0=#0b060e
+palette = 1=#f1c6e2
+palette = 2=#d3daad
+palette = 3=#efcfab
+palette = 4=#a7e1e8
+palette = 5=#d7cef9
+palette = 6=#b4e2c7
+palette = 7=#d7d5cd
+
+# Bright colors
+palette = 8=#0e0d09
+palette = 9=#ffb0e9
+palette = 10=#ddf069
+palette = 11=#ffca87
+palette = 12=#7df1ff
+palette = 13=#cab3ff
+palette = 14=#7bffc2
+palette = 15=#e5e1e7
