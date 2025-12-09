@@ -31,7 +31,7 @@ alias gri="gir rebase -i"
 alias grb="git rebase"
 alias grba="git rebase --abort"
 alias grbc="git rebase --continue"
-alias gpush="git push origin HEAD"
+alias gpush="git push -u origin HEAD"
 alias gpf="git push --force-with-lease origin HEAD"
 
 git_branch() {
@@ -50,3 +50,11 @@ export NVM_DIR="$HOME/.nvm"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/yonagi/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
