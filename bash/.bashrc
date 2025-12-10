@@ -5,6 +5,7 @@ bind ': menu-complete'
 bind ': menu-complete-backward'
 bind ': forward-word'
 bind ': backward-word'
+shopt -s autocd
 
 . "$HOME/.cargo/env"
 export GOPATH=$(go env GOPATH)
