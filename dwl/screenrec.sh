@@ -15,10 +15,11 @@ fi
 start_recording() {
     local filename="$OUTPUT_DIR/ScreenRecord-$(date +'%Y-%m-%d_%H-%M-%S').mp4"
 
-    local grid="$(slurp)"
-    notify-send "Screen recording started."
-    wl-screenrec --audio --audio-device alsa_output.pci-0000_00_1f.3.hdmi-stereo.monitor -f "$filename" -g "$grid" &
-    # gpu-screen-recorder -w portal -f 60 -a "default_output" -o "$filename" &
+    if grid="$(slurp)"; then
+        notify-send "Screen recording started."
+        wl-screenrec --audio --audio-device alsa_output.pci-0000_00_1f.3.hdmi-stereo.monitor -f "$filename" -g "$grid" &
+        # gpu-screen-recorder -w portal -f 60 -a "default_output" -o "$filename" &
+    fi
 }
 
 stop_recording() {
