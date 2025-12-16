@@ -3,6 +3,8 @@
 export XDG_SESSION_TYPE=wayland 
 export XDG_CURRENT_DESKTOP=wlroots
 export XDG_SESSION_DESKTOP=wlroots
+export GTK_THEME=Adwaita:dark
+export QT_STYLE_OVERRIDE="Adwaita"
 
 kill_if_exists() {
     if pgrep -x "${1}" > /dev/null; then
@@ -22,4 +24,5 @@ pipewire &
 kill_if_exists fcitx5
 fcitx5 &
 
-dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots
+# dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+dbus-update-activation-environment --all
