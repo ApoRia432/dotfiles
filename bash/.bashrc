@@ -16,6 +16,7 @@ export CC="$(which gcc)"
 export CXX="$(which g++)"
 export EDITOR=nvim
 
+alias v="nvim"
 alias open="xdg-open"
 alias ls="ls --color=auto"
 alias grep='grep --color=auto'
