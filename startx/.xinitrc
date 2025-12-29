@@ -12,6 +12,6 @@ pipewire &
 fcitx5 -d &
 dunst -config ~/.config/dunst/dunst.ini &
 feh --bg-scale ~/.config/swaybg/mornye.jpg &
-# picom --backend glx &
+picom --backend glx &
 exec slstatus &
 exec dwm
