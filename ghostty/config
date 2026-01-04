@@ -1,6 +1,7 @@
-theme = "GitHub Dark Default"
-cursor-opacity = 0.3
-cursor-text = ffffff
+# theme = "GitHub Dark Default"
+theme = "Catppuccin Mocha"
+# cursor-opacity = 0.3
+# cursor-text = ffffff
 
 font-family = "Iosevka Nerd Font Mono"
 font-size = 20
