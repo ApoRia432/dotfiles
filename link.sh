@@ -19,6 +19,7 @@ link_file() {
 link_file "tmux/.tmux.conf" "$HOME"
 link_file "bash/.bashrc" "$HOME"
 link_file "bash/.inputrc" "$HOME"
+link_file "startx/.xinitrc" "$HOME"
 
 link_file "dunst" "$HOME/.config"
 link_file "picom" "$HOME/.config"
