@@ -23,3 +23,4 @@ link_file "startx/.xinitrc" "$HOME"
 
 link_file "dunst" "$HOME/.config"
 link_file "picom" "$HOME/.config"
+link_file "dwm" "$HOME/.config"
