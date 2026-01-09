@@ -9,7 +9,7 @@ export GLFW_IM_MODULE=ibus
 
 pipewire &
 fcitx5 -d &
-dunst -config ~/.config/dunst/latte.ini &
+dunst -config ~/.config/dunst/tokyonight.ini &
 xrdb merge ~/.Xresources 
 feh --bg-fill ~/Pictures/aemeath.jpg &
 
