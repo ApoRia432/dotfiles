@@ -60,3 +60,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Added by flyctl installer
+export FLYCTL_INSTALL="/home/aemeath/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
