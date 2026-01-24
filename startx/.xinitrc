@@ -12,6 +12,7 @@ fcitx5 -d &
 dunst -config ~/.config/dunst/tokyonight.ini &
 xrdb merge ~/.Xresources 
 feh --bg-fill ~/Pictures/aemeath.jpg &
+picom --backend glx &
 
 exec slstatus &
 exec dwm
