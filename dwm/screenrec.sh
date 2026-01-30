@@ -21,7 +21,7 @@ start_recording() {
 
 stop_recording() {
     pkill -SIGINT -f "gpu-screen-recorder"
-    notify-send "Screen recording saved to $OUTPUT_DIR"
+    notify-send "Screen recording saved" "<a href=\"file://$OUTPUT_DIR\">$OUTPUT_DIR</a>"
 }
 
 if pgrep -f "gpu-screen-recorder" > /dev/null; then

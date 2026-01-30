@@ -8,6 +8,6 @@ fi
 if ! [[ $(pgrep -x "maim" > /dev/null) ]]; then
     filename="$OUTPUT_DIR/Screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png"
     maim -s "$filename" && \
-        notify-send "Screenshot saved" "$filename"
+        notify-send "Screenshot saved" "<a href=\"file://$filename\"> $filename</a>"
     xclip -selection clipboard -t image/png -i "$filename" 
 fi
