@@ -9,10 +9,10 @@ export GLFW_IM_MODULE=ibus
 
 pipewire &
 fcitx5 -d &
-dunst -config ~/.config/dunst/tokyonight.ini &
-xrdb merge ~/.Xresources 
-feh --bg-fill ~/Pictures/aemeath.jpg &
 picom --backend glx &
+xrdb merge ~/.Xresources 
+feh --bg-fill ~/Pictures/wallpapers/aemeath_together.jpg
+dunst -config ~/.config/dunst/mocha.ini &
 
 exec slstatus &
 exec dwm
