@@ -24,3 +24,4 @@ link_file "startx/.xinitrc" "$HOME"
 
 link_file "dunst" "$HOME/.config"
 link_file "dwm" "$HOME/.config"
+link_file "wallpapers" "$HOME/Pictures"
