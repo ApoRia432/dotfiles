@@ -11,7 +11,7 @@ pipewire &
 fcitx5 -d &
 picom --backend glx &
 xrdb merge ~/.Xresources 
-feh --bg-fill ~/Pictures/wallpapers/aemeath_together.jpg
+feh --bg-fill ~/Pictures/wallpapers/chisa_redmagic.jpg
 dunst -config ~/.config/dunst/mocha.ini &
 
 exec slstatus &
