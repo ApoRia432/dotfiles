@@ -64,3 +64,5 @@ esac
 # Added by flyctl installer
 export FLYCTL_INSTALL="/home/aemeath/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+source ~/.forejorc
