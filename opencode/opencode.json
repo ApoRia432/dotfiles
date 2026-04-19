@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": "notify",
+  "mcp": {
+    "forgejo": {
+      "type": "local",
+      "command": [ 
+        "forgejo-mcp",
+        "--transport", "stdio",
+        "--url", "https://codeberg.org/"
+      ],
+      "environment": {
+        "FORGEJO_USER_AGENT": "forgejo-mcp/1.0.0"
+      }
+    }
+  }
+}

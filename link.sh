@@ -21,6 +21,7 @@ link_file "bash/.bashrc" "$HOME"
 link_file "bash/.inputrc" "$HOME"
 link_file "startx/.Xresources" "$HOME"
 link_file "startx/.xinitrc" "$HOME"
+link_file "opencode/opencode.json" "$HOME/.config/opencode"
 
 link_file "dunst" "$HOME/.config"
 link_file "dwm" "$HOME/.config"
